@@ -1,2 +1,11 @@
 node_modules
 *.js
+
+debug/
+target/
+
+Cargo.lock
+
+**/*.rs.bk
+
+*.pdb
