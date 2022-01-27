@@ -61,6 +61,7 @@ function first(): void {
       b.split('\n')
         .map((r) => r.trim().replace(/\s{2,}/g, ' '))) // '22 13 17 11  0'
 
+        console.log(data)
   const rowLen = boards[0][0][1].length
   let index = 0
   let winner: boolean = false
@@ -105,7 +106,7 @@ function first(): void {
     }).map((r) => r.map((n) => Number(n)).reduce((p: number, c: number) => Number(p) + Number(c)))
     .reduce((p, c) => p + c)
 
-  console.log('FIRST', sum * Number(numbers[index]))
+  console.log('FIRST', sum * Number(numbers[index]), numbers[index])
 }
 first()
 
